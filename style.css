@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, #5B1A8C 0%, #8B1874 25%, #D91C5C 50%, #FF6B35 75%, #8B1874 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,19 +24,18 @@ body {
     margin-bottom: 40px;
 }
 
-.profile-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: white;
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    font-weight: bold;
-    color: #667eea;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.cover-image {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 30px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.cover-image:hover {
+    transform: scale(1.05);
 }
 
 h1 {
